@@ -2,12 +2,14 @@ footer{
     background-color: #242582;
 }
 main{
-    background-color: #99738E;
+    background-color: #825224;
 }
 
 .heightBox{
     height: 100px;
     width: 45%;
+    bottom: -10px;
+    left: 55%;
 }
 
 
