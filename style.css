@@ -1,3 +1,10 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Merriweather', serif;
+}
+
 footer{
     background-color: #242582;
 }
@@ -7,9 +14,9 @@ main{
 
 .heightBox{
     height: 100px;
-    width: 45%;
-    bottom: -10px;
-    left: 55%;
+    width: 40%;
+    bottom: -50px;
+    left: 60%;
 }
 
 
