@@ -40,11 +40,11 @@ function submit() {
  fetch("https://social-scanner.p.rapidapi.com/social-scan/", options)
     .then((response) => response.json()) 
   var jsonArray = [response.json()]
-  let name = jsonArray[0].valueInput;
-https = JSON.parse(https);
-https.data.forEach(value => {
-  console.log(value.https, value.id);
+  jsonArray.forEach((jsonArrayObj) => {
+  var jsonData = JSON.parse(jsonArrayObj.valueInput);
+  jsonData.data.forEach(({https}) => console.log(https));
 });
+ 
   .catch((err) => console.error(err));
 
   return;
