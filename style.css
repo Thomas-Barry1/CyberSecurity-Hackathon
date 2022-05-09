@@ -19,9 +19,13 @@ main{
     left: 60%;
 }
 
+@media screen and (max-width: 993px) {
+    .heightBox{
+        display: none;
+    }
+}
 
 
 #firstSec{
-    height: 500px;
     background-color: #2F2FA2;
 }

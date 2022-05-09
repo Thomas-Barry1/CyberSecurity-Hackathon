@@ -49,14 +49,19 @@
       </div>
     </nav>
     <section>
-      <div class="text-center py-5 position-relative" id="firstSec">
-          <div class="">
-            <h1 class="py-3 w-50 mx-auto lh-sm fw-bold">Worried About Your Sensitive Information Being Leaked?</h1>
-            <p class="py-3 fs-3 w-50 mx-auto">Then fill out the form below, and we'll do a scan of your accounts to see 
-              what we can find. And we'll recommend some steps you can take to protect your privacy.
-            </p>
-            <div class="position-absolute bg-light heightBox">
-                
+      <div class="text-center py-lg-1  position-relative" id="firstSec">
+          <div class="row">
+            <div class="col-lg-8">
+              <h1 class="py-5 mx-auto px-5 lh-sm fw-bold">Worried About Your Sensitive Information Being Leaked?</h1>
+              <p class="pb-3 fs-3 px-5 mx-auto mb-lg-5">Then fill out the form below, and we'll do a scan of your accounts to see 
+                what we can find. And we'll recommend some steps you can take to protect your privacy.
+              </p>
+            </div>
+            <div class="col-lg-4">
+              <img class="img-fluid w-lg-100 px-0" src="images/phone-img.jpg" alt="Phone">
+            </div>
+            <div class="position-absolute bg-light heightBox d-lg-block border border-dark border-2">
+                  
             </div>
           </div>
       </div>
@@ -64,26 +69,28 @@
     <main>
         <div class="container-fluid text-white">
             <div class="row">
-                <div class="col-lg-6 mt-lg-3 mt-4 vh-25">
-                <img class="img-fluid vh-100 w-100" src="images/Cybersecurity.jpg" alt="Cybersecurity wallpaper">
+                <div class="col-lg-6 mt-lg-3 mt-4 ">
+                <img class=" vh-100 w-100" src="images/Cybersecurity.jpg" alt="Cybersecurity wallpaper">
                 </div>
                 <div class="col-lg-6 mt-lg-3 mt-4 p-5">
                     <h2 class="fs-1 my-4 text-center">Let's Begin</h2>
                     <p class="fs-3 w-75">Enter any of your usernames or emails for accounts.</p>
-                    <form class="row g-3" action="" method="post">
-                      <div class="col-8">
-                        <label for="staticEmail2" class="visually-hidden">Email</label>
-                        <input type="text" class="form-control" id="staticEmail2" value="email@example.com">
-                      </div>
-                      <div class="dropdown col-3">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                          Options
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                          <li><a class="dropdown-item drop-js" href="#">Email</a></li>
-                          <!-- <li><a class="dropdown-item drop-js" href="#">Another action</a></li>
-                          <li><a class="dropdown-item drop-js" href="#">Something else here</a></li> -->
-                        </ul>
+                    <form action="" method="post" >
+                      <div class="row g-3 mb-2" id="emailAndBtn">
+                        <div class="col-8" id="emailEnter">
+                          <label for="staticEmail2" class="visually-hidden">Email</label>
+                          <input type="text" class="form-control" id="staticEmail2" value="email@example.com">
+                        </div>
+                        <div class="dropdown col-3" id="dropdown">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Options
+                          </button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item drop-js" href="#">Email</a></li>
+                            <!-- <li><a class="dropdown-item drop-js" href="#">Another action</a></li>
+                            <li><a class="dropdown-item drop-js" href="#">Something else here</a></li> -->
+                          </ul>
+                        </div>
                       </div>
                       <!-- <div class="col-8">
                         <label for="staticEmail3" class="visually-hidden">Email</label>
@@ -117,13 +124,13 @@
                           <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                       </div> -->
-                    <div class="col-5">
-                      <button type="button" class="btn btn-dark" id="addBtn"><img class="" src="/images/plus-sign.png" alt="Plus sign"></button>
+                    <div class="py-3" id="addBtn">
+                      <button type="button" class="btn btn-dark"><img class="" src="/images/plus-sign.png" alt="Plus sign"></button>
                     </div>
-                      <div class="col-3">
-                        <button type="submit" class="btn btn-primary mb-3">Submit</button>
-                      </div>
                     </form>
+                    <div class="py-3 text-center">
+                      <button type="submit" class="btn btn-primary mb-3 btn-lg" id="formSubmit">Submit</button>
+                    </div>
             </div>
         </div>
     </main>
@@ -142,7 +149,7 @@
             </div>
             <div class="col-lg-6 mt-lg-3 mt-4">
               <h3>Creators</h3>
-              <p>The creators of this project are Thomas, Jainam, Chief, and Amit</p>
+              <p>The creators of this project are Thomas, Jainam, Chief, and Ahelee</p>
             </div>
           </div>
         </div>
