@@ -48,7 +48,7 @@ char linkArray[1000];
         linkArray[] = node.get("https");
       }
    
-    .then((response) => console.log(response))
+    .then((response) => console.log(response)) 
     .catch((err) => console.error(err));
 
   return;
