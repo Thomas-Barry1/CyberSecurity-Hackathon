@@ -40,7 +40,7 @@ function submit() {
 char linkArray[1000];
   fetch("https://social-scanner.p.rapidapi.com/social-scan/", options)
     .then((response) => response.json())
-      String jsonString = response.json()
+     .then((response) => String jsonString)
       ObjectMapper mapper = new ObjectMapper();
       ObjectNode node = mapper.readValue(jsonString, ObjectNode.class);
       if(node.has("https")) {
