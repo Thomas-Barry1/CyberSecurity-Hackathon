@@ -45,7 +45,7 @@ function submit() {
   jsonData.data.forEach(({https}) => console.log(https));
 });
  
-  .catch((err) => console.error(err));
+ 
 
   return;
 }
