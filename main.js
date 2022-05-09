@@ -37,8 +37,7 @@ function submit() {
     },
     body: encodedParams,
   };
-char linkArray[1000];
-  fetch("https://social-scanner.p.rapidapi.com/social-scan/", options)
+ fetch("https://social-scanner.p.rapidapi.com/social-scan/", options)
     .then((response) => response.json()) 
   var jsonArray = [{response.json()}]
   let name = jsonArray[0].valueInput;
