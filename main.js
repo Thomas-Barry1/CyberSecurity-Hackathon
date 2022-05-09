@@ -45,7 +45,7 @@ char linkArray[1000];
       ObjectNode node = mapper.readValue(jsonString, ObjectNode.class);
       if(node.has("https")) {
          System.out.println("link" + node.get("https"));
-        linkArray[] = node.get("https");
+        linkArray[1] = node.get("https");
       }
    
     .then((response) => console.log(response)) 
