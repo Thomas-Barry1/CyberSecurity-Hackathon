@@ -45,7 +45,7 @@ https = JSON.parse(https);
 https.data.forEach(value => {
   console.log(value.https, value.id);
 });
-  
+  .catch((err) => console.error(err));
 
   return;
 }
