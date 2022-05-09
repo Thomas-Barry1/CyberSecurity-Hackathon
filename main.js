@@ -1,3 +1,5 @@
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 var elements = document.getElementsByClassName("drop-js");
 
 for (var index = 0; index < elements.length; index++) {
@@ -38,6 +40,13 @@ function submit() {
 
   fetch("https://social-scanner.p.rapidapi.com/social-scan/", options)
     .then((response) => response.json())
+      String jsonString = response.json()
+      ObjectMapper mapper = new ObjectMapper();
+      ObjectNode node = mapper.readValue(jsonString, ObjectNode.class);
+      if(node.has("https")) {
+         System.out.println("link" + node.get("https"));
+      }
+   
     .then((response) => console.log(response))
     .catch((err) => console.error(err));
 
