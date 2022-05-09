@@ -24,7 +24,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Results</title>
   </head>
-  <body>
+  <body class="text-white">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">Cyber</a>
@@ -50,27 +50,67 @@
         </div>
       </div>
     </nav>
-    <main>
+    <main class="main-results text-center py-5">
       <div>
-        <h1>Results of Our Search</h1>
+        <div class="row">
+          <div class="col-md-7" id="setBgSearch">
+            <h1 class="my-5 text-black fw-bold">Results of Our Search</h1>
+          </div>
+          <div class="col-md-5">
+            <h2 class="my-5">Total Points: <span>300</span></h2>
+            <h3 class="text-decoration-underline">
+              Here are the list of websites we found
+            </h3>
+            <p id="websites"></p>
+          </div>
+        </div>
+        <div></div>
       </div>
-      <div></div>
     </main>
-    <section>
-      <h2>How Can You Make Your Accounts More Secure?</h2>
+    <section class="section-Results text-center py-5 px-3">
+      <div class="mt-3">
+        <h2>How Can You Make Your Accounts More Secure?</h2>
+      </div>
       <div class="row">
-        <div class="col-lg-3">
+        <div class="col-md-4 mt-5 px-3 px-sm-5">
           <h3>Make your accounts private</h3>
         </div>
-        <div class="col-lg-3">
+        <div class="col-md-4 mt-5 px-3 px-sm-5">
           <h3>Create more secure passwords and use 2 Step Verification</h3>
         </div>
-        <div class="col-lg-3">
+        <div class="col-md-4 mt-5 px-3 px-sm-5">
           <h3>
             Don't share personal information like phone numbers or your location
           </h3>
         </div>
       </div>
     </section>
+    <footer>
+      <div class="text-center text-white pt-5 pb-3">
+        <h2>Contact and Credits</h2>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-6 mt-lg-3 mt-4">
+              <h3>Credits</h3>
+              <a
+                href="https://www.flaticon.com/free-icons/security"
+                title="security icons"
+                >Security icons created by Freepik - Flaticon</a
+              >
+            </div>
+            <div class="col-lg-6 mt-lg-3 mt-4">
+              <h3>Creators</h3>
+              <p>The creators of this project are Thomas and Jainam</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
   </body>
 </html>

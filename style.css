@@ -29,3 +29,20 @@ main{
 #firstSec{
     background-color: #2F2FA2;
 }
+
+
+/* Results Page */
+.section-Results{
+    background-color: #825224;
+}
+
+.main-results{
+    background-color: #242582;
+}
+
+#setBgSearch{
+    min-height: 500px;
+    background-image: url("images/researchingImage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

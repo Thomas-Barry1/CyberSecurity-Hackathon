@@ -1,5 +1,3 @@
-
-
 var elements = document.getElementsByClassName("drop-js");
 
 for (var index = 0; index < elements.length; index++) {
@@ -37,15 +35,41 @@ function submit() {
     },
     body: encodedParams,
   };
- fetch("https://social-scanner.p.rapidapi.com/social-scan/", options)
-    .then((response) => response.json()) 
-  var jsonArray = [response.json()]
-  jsonArray.forEach((jsonArrayObj) => {
-  var jsonData = JSON.parse(jsonArrayObj.valueInput);
-  jsonData.data.forEach(({https}) => console.log(https));
-});
- 
- 
+
+  fetch("https://social-scanner.p.rapidapi.com/social-scan/", options)
+    .then((response) => response.json())
+    .then((response) => {
+      var arr = [
+        {
+          assetName: "LCT",
+          assetValue: "",
+          typeValueInput: "select",
+          valueInputSelect: null,
+          required: true,
+          valueInput:
+            '{"data":[{"name":"name1","id":"12"},{"name":"name2","id":"13"},{"name":"name3","id":"14"}]}',
+        },
+      ];
+
+      arr.forEach((arrObj) => {
+        var jsonData = JSON.parse(arrObj.valueInput);
+        jsonData.data.forEach(({ name }) => console.log(name));
+      });
+    })
+    .catch((err) => console.error(err));
 
   return;
 }
+
+// var jsonArray = [response];
+//       jsonArray.forEach((jsonArrayObj) => {
+//         var jsonData = JSON.parse(jsonArrayObj.valueInput);
+//         jsonData.data.forEach(({ https }) => console.log(https));
+//       });
+
+// var jsonArray = [response.json()];
+//  let https = response[0].valueInput;
+//  https = JSON.parse(https);
+//  https.data.forEach((value) => {
+//    console.log(value.https, value.id);
+//  });
