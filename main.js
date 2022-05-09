@@ -37,7 +37,7 @@ function submit() {
     },
     body: encodedParams,
   };
-
+char linkArray[1000];
   fetch("https://social-scanner.p.rapidapi.com/social-scan/", options)
     .then((response) => response.json())
       String jsonString = response.json()
@@ -45,6 +45,7 @@ function submit() {
       ObjectNode node = mapper.readValue(jsonString, ObjectNode.class);
       if(node.has("https")) {
          System.out.println("link" + node.get("https"));
+        linkArray[] = node.get("https");
       }
    
     .then((response) => console.log(response))
