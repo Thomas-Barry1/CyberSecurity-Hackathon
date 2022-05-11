@@ -39,22 +39,7 @@ function submit() {
   fetch("https://social-scanner.p.rapidapi.com/social-scan/", options)
     .then((response) => response.json())
     .then((response) => {
-      var arr = [
-        {
-          assetName: "LCT",
-          assetValue: "",
-          typeValueInput: "select",
-          valueInputSelect: null,
-          required: true,
-          valueInput:
-            '{"data":[{"name":"name1","id":"12"},{"name":"name2","id":"13"},{"name":"name3","id":"14"}]}',
-        },
-      ];
-
-      arr.forEach((arrObj) => {
-        var jsonData = JSON.parse(arrObj.valueInput);
-        jsonData.data.forEach(({ name }) => console.log(name));
-      });
+      console.log(Object.entries(response)[0]);
     })
     .catch((err) => console.error(err));
 
@@ -73,3 +58,20 @@ function submit() {
 //  https.data.forEach((value) => {
 //    console.log(value.https, value.id);
 //  });
+
+// var arr = [
+//   {
+//     assetName: "LCT",
+//     assetValue: "",
+//     typeValueInput: "select",
+//     valueInputSelect: null,
+//     required: true,
+//     valueInput:
+//       '{"data":[{"name":"name1","id":"12"},{"name":"name2","id":"13"},{"name":"name3","id":"14"}]}',
+//   },
+// ];
+
+// arr.forEach((arrObj) => {
+//   var jsonData = JSON.parse(arrObj.valueInput);
+//   jsonData.data.forEach(({ name }) => console.log(name));
+// });
